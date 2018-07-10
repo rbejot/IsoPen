@@ -28,7 +28,7 @@ const Row = ({type}) => {
 
 const Rows = () => {
   let rows = []
-  for (let i = 0; i < 20; i++) {
+  for (let i = 0; i < 17; i++) {
     if (i % 2 === 0)
       rows.push(<Row key={i} type={"up"}/>)
     else

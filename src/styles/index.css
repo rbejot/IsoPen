@@ -1,0 +1,64 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.content {
+  display: flex;
+  height: 90vh;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.board {
+  margin: auto;
+  width: 351px;
+  height: 356px;
+  border: 1px solid grey;
+  background-color: grey;
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  width: 355px;
+  height: 20px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1px;
+}
+
+.cellUpLeft {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 20px 20px;
+  border-color: transparent transparent white transparent;
+  margin-right: 1px;
+  margin-left: -19px;
+}
+
+.cellUpRight {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 20px 0 0 20px;
+  border-color: transparent transparent transparent white;
+}
+
+.cellDownLeft {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 20px 20px 0;
+  border-color: transparent white transparent transparent;
+  margin-right: 1px;
+  margin-left: -19px;
+}
+
+.cellDownRight {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 20px 20px 0 0;
+  border-color: white transparent transparent transparent;
+}
